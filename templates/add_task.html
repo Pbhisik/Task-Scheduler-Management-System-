@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Task</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+    <h1> Add New Task</h1>
+    <form method="post">
+        <lable for="task_name">Task Name:</lable>
+        <input type="text" name="task_name" id="task_name" required>
+
+        <lable for="description">Description</lable>
+        <input type="text" name="description" id="description" required>
+
+        <lable for="schedule_time">schedule Time:</lable>
+        <input type="time" name="schedule_time" id="schedule_time" required>
+
+        <button type="submit">Add Task</button>
+
+
+    </form>
+    
+</body>
+</html>
